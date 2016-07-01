@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "Negative Reinforcement Life Coach",
+  "description": "This extension motivates you.",
+  "version": "1.0",
+
+  "permissions": [
+    "notifications",
+    "alarms",
+    "tabs"
+  ],
+  "background": {
+    "scripts": ["noun.js", "adjective.js", "popup.js"],
+    "persistent": false
+  }
+}
