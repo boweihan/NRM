@@ -3,13 +3,13 @@ document.addEventListener('DOMContentLoaded', function() {
     Notification.requestPermission();
 });
 
-  var start = ["GET OFF YOUR ASS YOU", "GET TO WORK YOU", "KICK IT INTO GEAR YOU", "DO SOMETHING USEFUL YOU", "GET IT TOGETHER YOU", "GET GOING YOU"];
-  // var adjective = ["YOU USELESS", "YOU WORTHLESS", "YOU LAZY", "YOU PROSPEROUS"]
-  // var noun = ["BABOON", "SASQUATCH", "SLOTH", "WARTHOG"]
+var start = ["GET OFF YOUR ASS YOU", "GET TO WORK YOU", "KICK IT INTO GEAR YOU", "DO SOMETHING USEFUL YOU", "GET IT TOGETHER YOU", "GET GOING YOU"];
+
 function starter() {
     var s = start[Math.floor(Math.random()*start.length)];
     return s
 }
+
 function random() {
   var n = noun[Math.floor(Math.random()*noun.length)];
   var a = adjective[Math.floor(Math.random()*adjective.length)];
@@ -39,8 +39,8 @@ var note = function() {
 }
 
 chrome.alarms.create("1min", {
-  delayInMinutes: 1,
-  periodInMinutes: 1
+  delayInMinutes: 5,
+  periodInMinutes: 5
 });
 
 chrome.alarms.onAlarm.addListener(function(alarm) {
